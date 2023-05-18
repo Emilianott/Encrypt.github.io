@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Encrypt</title>
+  </head>
+  <body>
+    <main>
+      <section>
+        <img class="imgA" src="img/a.svg" alt="A">
+        <div class="container">
+          <textarea placeholder="Enter text here"  name="textarea" id="area" cols="30" rows="10"></textarea>
+        </div>
+        <div class="adv">
+          <img class="exclamation" src="img/exc.svg" alt="exclamation" />
+          <p class="lowercase">Lowercase letters only</p>
+        </div>
+        <div class="btn-container">
+          <button id="encrypt" class="encrypt" onclick="encry()">
+            Encrypt
+          </button>
+          <button id="decrypt" class="decrypt" onclick="decry()">
+            Decrypt
+          </button>
+        </div>
+      </section>
+
+      <aside>
+        <div id="aside-ctn" class="aside-container">
+          <div id="img1" class="aside-img"></div>
+          <p id="text1" class="aside-p1">No text was found</p>
+          <p id="text2" class="aside-p2">
+            Enter the text you want to encrypt or decrypt
+          </p>
+        </div>
+      </aside>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
